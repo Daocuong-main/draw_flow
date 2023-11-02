@@ -15,7 +15,7 @@ for i in range(n):
     tensor, label = data[random.randint(0, len(data) - 1)]
     
     # Create a figure and an axis for plotting
-    fig, ax = plt.subplots(figsize=(32, 2.5))
+    fig, ax = plt.subplots(figsize=(224, 224))
 
     tensor = tensor[0]
 
@@ -23,8 +23,8 @@ for i in range(n):
     # Plot the tensor as an image
     ax.imshow(tensor, cmap='gray', aspect='auto')
 
-    # Set the title of the plot as the label
-    ax.set_title(labels[label], fontdict={'fontsize': 32}, loc='left')
+    # # Set the title of the plot as the label
+    # ax.set_title(labels[label], fontdict={'fontsize': 32}, loc='left')
     
     # Remove the axis ticks and labels
     ax.set_xticks([])

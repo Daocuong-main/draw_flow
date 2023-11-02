@@ -15,7 +15,7 @@ for i in range(n):
     tensor, label = data[random.randint(0, len(data) - 1)]
     
     # Create a figure and an axis for plotting
-    fig, ax = plt.subplots(figsize=(224, 224))
+    fig, ax = plt.subplots(figsize=(32, 32))
 
     tensor = tensor[0]
 
